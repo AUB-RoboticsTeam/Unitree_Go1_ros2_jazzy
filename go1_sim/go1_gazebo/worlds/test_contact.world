@@ -1,0 +1,26 @@
+<sdf version="1.9">
+  <world name="default">
+    <plugin name="gz::sim::systems::Contact" filename="gz-sim-contact-system"/>
+    <model name="ball">
+      <link name="link">
+        <collision name="c">
+          <geometry><sphere><radius>0.05</radius></sphere></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><sphere><radius>0.05</radius></sphere></geometry>
+        </visual>
+        <sensor name="contact" type="contact">
+          <contact><collision>c</collision></contact>
+          <topic>/contact_test</topic>
+        </sensor>
+      </link>
+    </model>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <physics type="ode"/>
+  </world>
+</sdf>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem1">
+  <link
+    name="stand_link">
+    <inertial>
+      <origin
+        xyz="0.688360469363331 0.832553562411857 1.26566755732854"
+        rpy="0 0 0" />
+      <mass
+        value="0.311684154115054" />
+      <inertia
+        ixx="0.000297584588539531"
+        ixy="1.25221918342986E-05"
+        ixz="-3.44549064110497E-05"
+        iyy="0.000336423483471832"
+        iyz="3.34208922508209E-05"
+        izz="0.000222807944908811" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/stand_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/stand_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

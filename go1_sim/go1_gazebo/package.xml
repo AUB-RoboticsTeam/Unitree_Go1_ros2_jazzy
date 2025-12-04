@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>go1_gazebo</name>
+  <version>0.0.0</version>
+  <description>Gazebo (GZ) Sim world + spawn/bridge launch files for Unitree Go1</description>
+  <maintainer email="RoboLI@aub.edu.lb">RoboticsTeam</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Tests (optional) -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- Runtime deps used by the launch files -->
+  <!-- GZ Sim + ROS <-> GZ bridge -->
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+
+  <!-- If you plan to run ros2_control inside GZ Sim later -->
+  <!-- (do NOT add if you’re not using it yet) -->
+  <!-- <exec_depend>gz_ros2_control</exec_depend> -->
+
+  <!-- Things the repo already uses elsewhere / for completeness -->
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>ros2_control</exec_depend>
+  <exec_depend>imu_sensor_broadcaster</exec_depend>
+
+  <!-- messages you bridge -->
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+
+  <!-- We reference go1_description at runtime to resolve meshes -->
+  <exec_depend>go1_description</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
