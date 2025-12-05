@@ -68,7 +68,8 @@ sudo apt install -y \
 #### **2.4 Gazebo ROS 2 Plugins**
 
 ```bash
-sudo apt install -y ros-jazzy-gazebo-ros-pkgs ros-jazzy-gazebo-plugins
+sudo apt install ros-jazzy-ros-gz \
+sudo apt install ros-jazzy-gz-ros2-control
 ```
 
 #### **2.5 ROS 2 Message Packages**
@@ -107,7 +108,10 @@ sudo ldconfig
 After installing dependencies:
 
 ```bash
-cd ~/your_ros2_ws
+mkdir -p ~/your_ros2_ws/src
+cd ~/your_ros2_ws/src
+git clone https://github.com/AUB-RoboticsTeam/Unitree_Go1_ros2_jazzy.git
+cd ..
 colcon build --symlink-install
 source install/setup.bash
 ```
