@@ -19,7 +19,7 @@
 
     <!-- Rotor related joint and link is only for demonstrate location. -->
     <!-- Actually, the rotor will rotate and the joint is not fixed. Reduction ratio should be considered. -->
-<xacro:include filename="$(find go1_description)/xacro/_d435i.urdf.xacro"/>
+
 
     <!-- Debug mode will hung up the robot, use "true" or "false" to switch it. -->
     <xacro:if value="$(arg DEBUG)">
