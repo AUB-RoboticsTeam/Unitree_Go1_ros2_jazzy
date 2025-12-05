@@ -68,8 +68,8 @@ sudo apt install -y \
 #### **2.4 Gazebo ROS 2 Plugins**
 
 ```bash
-sudo apt install ros-jazzy-ros-gz \
-sudo apt install ros-jazzy-gz-ros2-control
+sudo apt install ros-jazzy-ros-gz ros-jazzy-gz-ros2-control
+
 ```
 
 #### **2.5 ROS 2 Message Packages**
